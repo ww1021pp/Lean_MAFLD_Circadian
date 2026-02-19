@@ -158,6 +158,7 @@ ggplot(comparison_bar_data,aes(x = phase, fill = Group)) +
     y = "Protein Count"
   )
 ggsave("../Figs_out/Distribution_of_phase.pdf",height = 3,width = 4)
+<img width="458" height="347" alt="image" src="https://github.com/user-attachments/assets/2ac310aa-7afe-42b2-a0ca-8f29659b2d68" />
 
 
 
@@ -185,6 +186,8 @@ p3 <- make_rose(comparison_bar_data, "Case-Specific", "#E41A1C")
 # Combine them in a row (1 row, 3 columns)
 three_row_plot <- p2 + p1 + p3 + plot_layout(nrow = 1)
 ggsave("../Figs_out/RosePlot_of_phasefor3Catogory.pdf",height = 3,width = 6)
+
+<img width="702" height="264" alt="image" src="https://github.com/user-attachments/assets/85ce2b69-433b-49fe-bf60-553580b7dbac" />
 
 
 ###### plot 
@@ -215,6 +218,7 @@ p_density = p2_1 + p1_1 + p3_1 + plot_layout(nrow = 1)
 
 ggsave("../Figs_out/densityDistribution_of_phase_3Catogory.pdf",plot = p_density,height = 2,width = 6)
 
+<img width="700" height="221" alt="image" src="https://github.com/user-attachments/assets/89ba9db3-7e95-4451-8365-87db0aa5e232" />
 
 
 ########################## plot circadian phase amplitude scatter plot###
@@ -280,6 +284,8 @@ library(patchwork)
 p= p1_ctrl + p1_case
 ggsave(filename = "../Figs_out/scatterplot_phase_amp_control_MALFD.pdf",plot = p,height = 4, width = 10)
 
+<img width="1174" height="458" alt="image" src="https://github.com/user-attachments/assets/2a54778f-6e02-40f8-a283-2c9db56f3941" />
+
 
 ##############################
 library(circular)
@@ -319,4 +325,5 @@ ggplot(common_analysis, aes(x = phase_ctrl, y = phase_case)) +
     y = "Case Peak Time (h)"
   )
 ggsave("../Figs_out/Correlation_plot_of_Scatter_plots_CtrlphaseVSCasephase.pdf",height =4,width = 4 )
+<img width="461" height="466" alt="image" src="https://github.com/user-attachments/assets/95ce404f-dc8c-4e5d-a139-a4f17d5a0ecf" />
 
